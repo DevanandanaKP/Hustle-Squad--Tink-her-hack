@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeCircle-Women</title> <!-- Title added here for the browser tab -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+<h1>SafeCircle-Women</h1> <!-- Title added here for the page -->
+    <div class="container">
+        <!-- Display Title on Page -->
+        
+        
+        <div class="map-section">
+            <div id="map"></div>
+        </div>
+        <div class="form-section">
+            <h2>Mark Unsafe Location</h2>
+            <p>Click on the map to mark an unsafe location.</p>
+
+            <!-- Signup Form -->
+            <div id="signup-form">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-username" placeholder="Enter Username" required>
+                <button id="signup-button">Sign Up</button>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="hidden">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Enter Username" required>
+                <button id="login-button">Login</button>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+
+            <!-- Trusted Contacts Section -->
+            <div id="contact-section" class="hidden">
+                <h2>Trusted Contacts</h2>
+                <button id="add-contact">Add Trusted Contact</button>
+                <div id="contact-form" class="hidden">
+                    <input type="text" id="contact-name" placeholder="Name" required>
+                    <input type="text" id="contact-phone" placeholder="Phone Number" required>
+                    <button id="save-contact">Save Contact</button>
+                </div>
+                <ul id="contact-list"></ul>
+                <!-- Sign Out Button -->
+                <button id="sign-out-button" class="hidden">Sign Out</button>
+            </div>
+
+            <h2>SOS</h2>
+            <button id="sos-button">Send SOS</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
